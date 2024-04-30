@@ -1,0 +1,45 @@
+name: kaloriabarat
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.7.0
+  fl_chart: ^0.67.0
+  intl: ^0.19.0
+  firebase_core: ^2.28.0
+  user_repository:
+    path: packages/user_repository
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+  firebase_auth: ^4.19.0
+  cloud_firestore: ^4.17.0
+  uuid: ^4.4.0
+  flutter_colorpicker: ^1.0.3
+  http: ^1.2.1
+  faker: ^2.1.0
+  collection: ^1.15.0
+  
+
+
+  calorie_intake_repository:
+    path: packages/calorie_intake_repository
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/login.png

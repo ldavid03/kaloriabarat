@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409291558626",
+    "project_id": "kaloriabarat",
+    "storage_bucket": "kaloriabarat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409291558626:android:6ec64ae59d24e604ded8bb",
+        "android_client_info": {
+          "package_name": "com.example.kaloriabarat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhjiOwc5ndRCihE5wyk2bciLr6f5XQgto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

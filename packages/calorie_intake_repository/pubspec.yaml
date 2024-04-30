@@ -1,0 +1,25 @@
+name: calorie_intake_repository
+description: This repository handles the CRUD operations for the calorie intake data.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  firebase_auth: ^4.19.2
+  cloud_firestore: ^4.17.0
+  user_repository:
+    path: ../user_repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
