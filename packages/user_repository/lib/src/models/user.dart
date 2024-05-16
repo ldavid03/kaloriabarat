@@ -60,13 +60,13 @@ class MyUser extends Equatable  {
 
 	static MyUser fromEntity(MyUserEntity entity) {
   return MyUser(
-    userId: entity.userId ?? '', 
-    email: entity.email ?? '', 
-    name: entity.name ?? '',
-    isMale: entity.isMale ?? false,
-    height: entity.height ?? 0,
-    goalCalories: entity.goalCalories ?? 0,
-    birthDate: entity.birthDate ?? DateTime.now(),
+    userId: entity.userId, 
+    email: entity.email, 
+    name: entity.name,
+    isMale: entity.isMale,
+    height: entity.height,
+    goalCalories: entity.goalCalories,
+    birthDate: entity.birthDate,
   );
 }
 	

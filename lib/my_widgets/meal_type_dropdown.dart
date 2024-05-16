@@ -8,7 +8,7 @@ class MealTypeDropdown extends StatefulWidget {
   MealTypeDropdown({required this.onChanged, required this.mealTypes});
 
   @override
-  _MealTypeDropdownState createState() => _MealTypeDropdownState();
+  State<MealTypeDropdown> createState() => _MealTypeDropdownState();
 }
 
 class _MealTypeDropdownState extends State<MealTypeDropdown> {

@@ -32,9 +32,19 @@ class MyBottomNavigationBar extends StatelessWidget {
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Icon(
-            CupertinoIcons.graph_square_fill,
-            color: index == 1 ? selectedItem : unselectedItem,
+          icon: Stack(
+            alignment: Alignment.center,
+            children: [
+              Icon(
+                FontAwesomeIcons.solidMessage,
+                color: index == 1 ? selectedItem : unselectedItem,
+              ),
+              Positioned(
+        top: -2.0, // Adjust as needed
+        left: 4.0, // Adjust as needed
+        child: MyText("AI", "m", "b"),
+      ),
+            ],
           ),
           label: 'Stats',
         ),

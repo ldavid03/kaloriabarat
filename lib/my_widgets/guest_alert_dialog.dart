@@ -1,6 +1,8 @@
 part of 'my_widgets.dart';
 
 class GuestAlerDialog extends StatelessWidget {
+  const GuestAlerDialog({super.key});
+
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -10,16 +12,16 @@ class GuestAlerDialog extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              MyText(
+              const MyText(
                 'By logging in as guest, you are limited to:',"l","b"),
-              SpaceHeight('m'),
-              MyText('• Default calorie intake.',"m","n"),
-              MyText('• The data you log will be lost!',"m","n"),
-              MyText('• No custom foods.',"m","n"),
-              MyText('• No chatbot',"m","n"),
-              MyText('• No statistics',"m","n"),
-              MyText('• No profile page',"m","n"),
-              SpaceHeight('m'),
+              const SpaceHeight('m'),
+              const MyText('• Default calorie intake.',"m","n"),
+              const MyText('• The data you log will be lost!',"m","n"),
+              const MyText('• No custom foods.',"m","n"),
+              const MyText('• No chatbot',"m","n"),
+              const MyText('• No statistics',"m","n"),
+              const MyText('• No profile page',"m","n"),
+              const SpaceHeight('m'),
               ActionButton(
                 onPressed: () {
                   Navigator.of(context).pop();

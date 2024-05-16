@@ -6,7 +6,7 @@ class MyText extends StatelessWidget {
   final String weight;
   final String? color;
 
-  MyText(this.text, this.size, this.weight, {this.color = 'onBackground'});
+  const MyText(this.text, this.size, this.weight, {super.key, this.color = 'onBackground'});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,9 @@ class MyText extends StatelessWidget {
         break;
       case 'm':
         fontSize = 16.0;
+        break;
+      case 'ls':
+        fontSize = 25.0;
         break;
       case 'l':
         fontSize = 20.0;
@@ -60,7 +63,9 @@ class MyText extends StatelessWidget {
       case 'tertiary':
         textColor = Theme.of(context).colorScheme.tertiary;
         break;
-      // Add more cases here for other colors
+      case 'error':
+        textColor = Theme.of(context).colorScheme.error;
+        break;
       default:
         textColor = Theme.of(context).colorScheme.onBackground;
     }

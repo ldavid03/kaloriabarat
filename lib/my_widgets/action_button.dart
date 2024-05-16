@@ -5,10 +5,10 @@ class ActionButton extends StatefulWidget {
   final BuildContext ctx;
   final String str;
 
-  ActionButton({required this.onPressed, required this.ctx, required this.str});
+  const ActionButton({super.key, required this.onPressed, required this.ctx, required this.str});
 
   @override
-  _ActionButtonState createState() => _ActionButtonState();
+  State<ActionButton> createState() => _ActionButtonState();
 }
 
 class _ActionButtonState extends State<ActionButton> {
@@ -19,24 +19,15 @@ class _ActionButtonState extends State<ActionButton> {
       width: MediaQuery.of(context).size.width,
       child: TextButton(
         style: TextButton.styleFrom(
-            backgroundColor: widget.str == 'Save'|| widget.str == 'Sign In' || widget.str == 'Sign Up' ? getColorScheme(context).secondary : getColorScheme(context).onSecondary,
+            backgroundColor: widget.str == 'Save'|| widget.str == 'Sign In' || widget.str == 'Sign Up' ? getColorScheme(context).secondary : getColorScheme(context).tertiary,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12))),
         onPressed: widget.onPressed,
-        child:  widget.str == 'Save' || widget.str == 'Sign In' || widget.str == 'Sign Up'
-        ? 
-        MyText(
+        child:  MyText(
           widget.str,
           "l",
           "b",
           color: "",
-        )
-        
-        :MyText(
-          widget.str,
-          "l",
-          "b",
-          color: "onPrimary",
         ),
       ),
     );

@@ -7,7 +7,7 @@ ButtonStyle blackButtonStyle = TextButton.styleFrom(
   ),
 ).copyWith(
   textStyle: MaterialStateProperty.all<TextStyle>(
-    TextStyle(
+    const TextStyle(
       color: Colors.white,
     ),
   ),

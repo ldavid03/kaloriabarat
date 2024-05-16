@@ -3,7 +3,7 @@ part of 'my_widgets.dart';
 class MyLogOutButton extends StatelessWidget {
   final bool isHidden;
 
-  MyLogOutButton(this.isHidden);
+  const MyLogOutButton(this.isHidden, {super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,10 +4,10 @@ class DatePickerField extends StatefulWidget {
   final DateTime initialDate;
   final Function(DateTime) onDateChanged;
 
-  DatePickerField({required this.initialDate, required this.onDateChanged});
+  const DatePickerField({super.key, required this.initialDate, required this.onDateChanged});
 
   @override
-  _DatePickerFieldState createState() => _DatePickerFieldState();
+  State<DatePickerField> createState() => _DatePickerFieldState();
 }
 
 class _DatePickerFieldState extends State<DatePickerField> {
@@ -33,8 +33,8 @@ class _DatePickerFieldState extends State<DatePickerField> {
           DateTime? newDate = await showDatePicker(
               context: context,
               initialDate: selectedDate,
-              firstDate: DateTime.now().subtract(Duration(days: 365)),
-              lastDate: DateTime.now().add(Duration(days: 365)));
+              firstDate: DateTime.now().subtract(const Duration(days: 365)),
+              lastDate: DateTime.now().add(const Duration(days: 365)));
           if (newDate != null) {
             setState(() {
               dateController.text = DateFormat('yyyy. MM. dd.').format(newDate);
@@ -48,7 +48,7 @@ class _DatePickerFieldState extends State<DatePickerField> {
           filled: true,
           fillColor: getColorScheme(context).tertiary
                                                     .withOpacity(0.5),
-          prefixIcon: const Icon(FontAwesomeIcons.calendar, size: 16, color: Colors.grey),
+          prefixIcon: const Icon(FontAwesomeIcons.calendar, size: 16, color: Colors.black),
           hintText: "Date",
           border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(12)),
