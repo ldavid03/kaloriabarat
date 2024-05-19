@@ -80,7 +80,7 @@ class _AddMealScreenState extends State<AddMealScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SpaceWidth('m'),
+                          const SpaceWidth('m'),
                           Flexible(
                             child: SingleChildScrollView(
                                 child: Column(
@@ -136,7 +136,7 @@ class _AddMealScreenState extends State<AddMealScreen> {
                                     ),
                                   ),
                                 ),
-                                SpaceHeight('m'),
+                                const SpaceHeight('m'),
                                 Container(
                                   height: kToolbarHeight,
                                   color: getColorScheme(context).background,
@@ -194,7 +194,7 @@ class _AddMealScreenState extends State<AddMealScreen> {
                                     ],
                                   ),
                                 ),
-                                SpaceHeight('m'),
+                                const SpaceHeight('m'),
                                 ActionButton(
                                     onPressed: () async {
                                       var newConsumable =
@@ -208,7 +208,7 @@ class _AddMealScreenState extends State<AddMealScreen> {
                                     },
                                     ctx: context,
                                     str: "Create custom Consumable"),
-                                SpaceHeight('m'),
+                                const SpaceHeight('m'),
                                 Row(
                                   children: [
                                     Expanded(
@@ -260,7 +260,7 @@ class _AddMealScreenState extends State<AddMealScreen> {
                                     ),
                                   ],
                                 ),
-                                SpaceHeight('m'),
+                                const SpaceHeight('m'),
                                 DatePickerField(
                                   initialDate: meal.date,
                                   onDateChanged: (newDate) {
@@ -275,12 +275,12 @@ class _AddMealScreenState extends State<AddMealScreen> {
                               ? Container()
                               : Column(
                                   children: [
-                                    SpaceHeight('m'),
+                                    const SpaceHeight('m'),
                                     MyText(errorController.text, "l", "b",
                                         color: "error"),
                                   ],
                                 ),
-                          SpaceHeight('m'),
+                          const SpaceHeight('m'),
                           ActionButton(
                               onPressed: () {
                                 try {

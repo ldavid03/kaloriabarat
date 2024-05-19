@@ -20,7 +20,7 @@ class _SetGoalScreenState extends State<SetGoalScreen> {
   TextEditingController heightController = TextEditingController();
   TextEditingController weightController = TextEditingController();
   TextEditingController diffWeightController = TextEditingController();
-  bool isDeficitController = true;
+  bool isSufficitController = true;
   String genderController = 'female';
   DateTime goalDate = DateTime.now();
   double activityController = 1.2;
@@ -225,23 +225,23 @@ class _SetGoalScreenState extends State<SetGoalScreen> {
                                   isExpanded: true,
                                   isDense: true,
                                   dropdownColor: colorScheme.tertiary,
-                                  value: isDeficitController,
+                                  value: isSufficitController,
                                   icon: const Icon(Icons.arrow_drop_down),
                                   style: TextStyle(
                                     color: colorScheme.onBackground,
                                   ),
                                   onChanged: (dynamic nemValue) {
                                     setState(() {
-                                      isDeficitController = nemValue!;
+                                      isSufficitController = nemValue!;
                                     });
                                   },
                                   items: const [
                                     DropdownMenuItem(
-                                      value: true,
+                                      value: false,
                                       child: MyText("lose", "m", "n"),
                                     ),
                                     DropdownMenuItem(
-                                      value: false,
+                                      value: true,
                                       child: MyText("gain", "m", "n"),
                                     ),
                                   ],
@@ -444,7 +444,7 @@ class _SetGoalScreenState extends State<SetGoalScreen> {
                                     (1.8 * updatedUser.height) -
                                     (4.7 * age);
                             double tdee = bmr * activityController;
-                            double goalWeightDiff = isDeficitController
+                            double goalWeightDiff = isSufficitController
                                 ? double.parse(diffWeightController.text)
                                 : -double.parse(diffWeightController.text);
                             updatedUser.goalCalories =

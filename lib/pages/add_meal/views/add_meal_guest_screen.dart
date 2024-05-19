@@ -53,7 +53,7 @@ class _AddMealGuestScreenState extends State<AddMealGuestScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-            SpaceHeight('m'),
+            const SpaceHeight('m'),
             Flexible(
               child: SingleChildScrollView(
                 child: Column(
@@ -107,7 +107,7 @@ class _AddMealGuestScreenState extends State<AddMealGuestScreen> {
                         ),
                       ),
                     ),
-                    SpaceHeight('m'),
+                    const SpaceHeight('m'),
                     Container(
                       height: kToolbarHeight,
                       color: getColorScheme(context).background,
@@ -158,7 +158,7 @@ class _AddMealGuestScreenState extends State<AddMealGuestScreen> {
                         ],
                       ),
                     ),
-                    SpaceHeight('m'),
+                    const SpaceHeight('m'),
                     Row(
                       children: [
                         Expanded(
@@ -203,17 +203,17 @@ class _AddMealGuestScreenState extends State<AddMealGuestScreen> {
                         ),
                       ],
                     ),
-                    SpaceHeight('m'),
+                    const SpaceHeight('m'),
                     errorController.text == ""
                         ? Container()
                         : Column(
                             children: [
-                              SpaceHeight('m'),
+                              const SpaceHeight('m'),
                               MyText(errorController.text, "l", "b",
                                   color: "error"),
                             ],
                           ),
-                    SpaceHeight('m'),
+                    const SpaceHeight('m'),
                     ActionButton(
                         onPressed: () {
                           try {
