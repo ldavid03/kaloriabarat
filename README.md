@@ -2,7 +2,7 @@
 
 ## Fontos!
 
-A program helyes működéséhez a lib/local_keys.dart fájlt cserélje ki a egyeb_mellekletek.zip.zip-ben található local_keys.dart fájllal. A fájl azon API kulcsokat tartalmazza, melyek nélkülözhetetlenek az élelmiszer kereséshez, illetve a chatbot használatához.
+A program helyes működéséhez a lib/local_keys.dart fájlt cserélje ki a egyeb_mellekletek.zip-ben található local_keys.dart fájllal. A fájl azon API kulcsokat tartalmazza, melyek nélkülözhetetlenek az élelmiszer kereséshez, illetve a chatbot használatához.
 
 ## Important!
 
